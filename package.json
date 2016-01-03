@@ -1,0 +1,23 @@
+{
+  "name": "es6-setup",
+  "version": "1.0.0",
+  "description": "es6 setup demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tilmanpotthof/es6-setup.git"
+  },
+  "keywords": [
+    "es6",
+    "setup"
+  ],
+  "author": "Tilman Potthof <tilmanpotthof@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tilmanpotthof/es6-setup/issues"
+  },
+  "homepage": "https://github.com/tilmanpotthof/es6-setup#readme"
+}
