@@ -23,10 +23,19 @@
 <h2>es6 setup</h2>
 <pre id="log-container"><code id="logs">## Hello...</code></pre>
 
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script>
+    // set our baseURL reference path
+    System.config({
+        baseURL: '/dist'
+    });
+
+    // loads /app/main.js
+    System.import('app.js');
+</script>
 <script>
     (function () {
         'use strict';
-
 
         var pageLogger = {
             elementSelector: function (selector) {
@@ -67,8 +76,6 @@
         })
     })();
 </script>
-<script></script>
-<script src="dist/app.js"></script>
 <script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>

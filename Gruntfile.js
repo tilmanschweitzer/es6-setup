@@ -5,6 +5,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         babel: {
             options: {
+                plugins: ["transform-es2015-modules-systemjs"],
                 presets: ["es2015"],
                 sourceMap: true
             },
