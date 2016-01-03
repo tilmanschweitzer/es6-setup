@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/tilmanpotthof/es6-setup/issues"
   },
-  "homepage": "https://github.com/tilmanpotthof/es6-setup#readme"
+  "homepage": "https://github.com/tilmanpotthof/es6-setup#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "grunt": "^0.4.5",
+    "grunt-babel": "^6.0.0",
+    "load-grunt-tasks": "^3.4.0"
+  }
 }
