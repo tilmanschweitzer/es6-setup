@@ -37,43 +37,7 @@
     (function () {
         'use strict';
 
-        var pageLogger = {
-            elementSelector: function (selector) {
-                this.selector = selector;
-            },
-            appendLog: function (message) {
-                this.logsElement.innerHTML = this.logsElement.innerHTML + '\n\n' + message;
-            },
-            appendArguments: function (args) {
-                this.appendLog(args.map(function (argument) {
-                    if (typeof argument === 'object') {
-                        return JSON.stringify(argument);
-                    }
 
-                    return argument;
-                }).join('\n'));
-            }
-        };
-
-        var logFn = console.log;
-
-        console.log = function () {
-            pageLogger.appendArguments(Array.prototype.slice.apply(arguments));
-            logFn.apply(console, arguments);
-        };
-
-        var _logsElement;
-        Object.defineProperty(pageLogger, 'logsElement', {
-            get: function () {
-                if (_logsElement === undefined || _logsElement.selector !== this.selector) {
-                    _logsElement = {
-                        element: document.querySelector('#logs'),
-                        selector: this.selector
-                    };
-                }
-                return _logsElement.element;
-            }
-        })
     })();
 </script>
 <script src="//localhost:35729/livereload.js"></script>
